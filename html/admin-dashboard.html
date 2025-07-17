@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - EduLearn</title>
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EduLearn Admin</div>
+            <ul class="nav-links">
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="admin-dashboard">
+        <h2>Admin Dashboard</h2>
+
+        <!-- Overview Section -->
+        <div class="overview">
+            <div class="stat-card">
+                <h3>Total Users</h3>
+                <p>1,245</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Courses</h3>
+                <p>45</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Revenue</h3>
+                <p>$12,500</p>
+            </div>
+        </div>
+
+        <!-- Course Management Section -->
+        <div class="management-section" id="courses">
+            <h3>Course Management</h3>
+            <button class="btn">Add New Course</button>
+            <table class="management-table">
+                <thead>
+                    <tr>
+                        <th>Course ID</th>
+                        <th>Course Name</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Web Development</td>
+                        <td>$99</td>
+                        <td>
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Data Science</td>
+                        <td>$149</td>
+                        <td>
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- User Management Section -->
+        <div class="management-section" id="users">
+            <h3>User Management</h3>
+            <table class="management-table">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Payment Management Section -->
+        <div class="management-section" id="payments">
+            <h3>Payment History</h3>
+            <table class="management-table">
+                <thead>
+                    <tr>
+                        <th>Payment ID</th>
+                        <th>User</th>
+                        <th>Course</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P001</td>
+                        <td>John Doe</td>
+                        <td>Web Development</td>
+                        <td>$99</td>
+                        <td>2023-10-01</td>
+                    </tr>
+                    <tr>
+                        <td>P002</td>
+                        <td>Jane Smith</td>
+                        <td>Data Science</td>
+                        <td>$149</td>
+                        <td>2023-10-02</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 EduLearn. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
